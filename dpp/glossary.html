@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPP-Glossar (A–Z) | Digitaler Produktpass in der Praxis</title>
+  <meta name="description" content="Alle wichtigen Fachbegriffe, Normen und Rechtsbegriffe rund um den Digitalen Produktpass (DPP), die Batterieverordnung (EU) 2023/1542, ESPR (EU) 2024/1781, EN 18219–18246 und dpplint." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/dpp-logo.svg" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <style>
+    :root {
+      --ink: #11131a; --ink-soft: #2f3342; --muted: #525668;
+      --paper: #ffffff; --paper-2: #fafafa; --line: #e2e4ec;
+      --azure: #31572c; --azure-soft: #eef6e8; --azure-ink: #31572c;
+      --serif: "Spectral", Georgia, serif; --sans: "Inter", -apple-system, sans-serif; --mono: "JetBrains Mono", monospace;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(ellipse 60% 40% at 88% 0%, rgba(197, 228, 160, 0.32), transparent 60%), radial-gradient(ellipse 50% 40% at 10% 100%, rgba(226, 218, 245, 0.24), transparent 58%), var(--paper); color: var(--ink-soft); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--azure-ink); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+    h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; line-height: 1.12; margin: 0 0 .5em; }
+    p { margin: 0 0 1em; }
+    .site-nav { background: rgba(255,255,255,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); padding: 14px 0; }
+    .site-nav .wrap { display: flex; align-items: center; gap: 10px; font-size: 14px; flex-wrap: wrap; }
+    .site-nav a { color: var(--ink-soft); font-weight: 600; }
+    .site-nav .sep { color: var(--line); }
+    .hero { padding: 68px 0 48px; border-bottom: 1px solid var(--line); position: relative; background: radial-gradient(ellipse 55% 65% at 85% 20%, rgba(197, 228, 160, 0.36), transparent 62%), #ffffff; }
+    .site-logo { position: absolute; top: 24px; right: 24px; width: 76px; height: 76px; }
+    @media (max-width: 640px) { .site-logo { display: none; } }
+    .tag { display: inline-block; font: 700 11.5px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--azure-ink); border: 1px solid var(--line); border-left: 3px solid var(--azure-ink); border-radius: 2px; padding: 5px 12px; margin-bottom: 16px; background: #fff; }
+    .hero h1 { font-size: clamp(34px, 5vw, 48px); margin-bottom: 12px; }
+    .lede { font-size: 18px; max-width: 64ch; color: var(--ink-soft); }
+    .search-bar { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); padding: 16px 0; }
+    .search-inner { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+    .search-field { position: relative; flex: 1 1 320px; min-width: 240px; }
+    #glossary-search { width: 100%; font: 400 16px var(--sans); color: var(--ink); background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--azure-ink); border-radius: 2px; padding: 12px 16px; min-height: 48px; }
+    #glossary-search:focus { outline: 2px solid var(--azure-ink); border-color: var(--azure-ink); }
+    .search-count { font-size: 14px; color: var(--muted); white-space: nowrap; }
+    .search-count b { color: var(--ink); }
+    .alpha-nav { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 12px; }
+    .alpha-nav a { font: 600 12.5px var(--mono); color: var(--azure-ink); background: #fff; border: 1px solid var(--line); border-radius: 2px; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; }
+    .alpha-nav a[aria-disabled="true"] { color: var(--line); pointer-events: none; background: var(--paper-2); }
+    section { padding: 44px 0 68px; }
+    .letter-head { font-family: var(--serif); font-size: 24px; color: var(--azure-ink); border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 36px 0 18px; }
+    .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+    .term { background: radial-gradient(ellipse at 90% 12%, rgba(197, 228, 160, 0.36), transparent 60%), #fff; border: 1px solid var(--line); border-left: 4px solid #31572c; border-radius: 2px; padding: 20px 22px; }
+    .term:nth-child(4n+2) { border-left-color: #7360dc; background: radial-gradient(ellipse at 90% 12%, rgba(226, 218, 245, 0.36), transparent 60%), #fff; }
+    .term:nth-child(4n+3) { border-left-color: #0f766e; background: radial-gradient(ellipse at 90% 12%, rgba(190, 235, 224, 0.36), transparent 60%), #fff; }
+    .term:nth-child(4n+4) { border-left-color: #1d4ed8; background: radial-gradient(ellipse at 90% 12%, rgba(210, 226, 255, 0.36), transparent 60%), #fff; }
+    .term h3 { font-size: 18px; margin: 0 0 2px; color: var(--ink); }
+    .term .de { font: 600 12.5px var(--mono); color: var(--azure-ink); margin: 0 0 8px; }
+    .term p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 10px; }
+    .term .mod { display: inline-flex; align-items: center; gap: 5px; font: 600 12px var(--mono); color: var(--azure-ink); background: var(--azure-soft); border-radius: 6px; padding: 4px 10px; }
+    .term .mod:hover { background: var(--azure-ink); color: #fff; text-decoration: none; }
+    .term.hide, .letter-group.hide { display: none; }
+    .no-results { display: none; text-align: center; padding: 48px 20px; color: var(--muted); }
+    .no-results.show { display: block; }
+    footer { border-top: 1px solid var(--line); padding: 32px 0 56px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Breadcrumb">
+    <div class="wrap">
+      <a href="index.html#start">&larr; Zurück zum DPP-Praxiskurs</a>
+      <span class="sep">&middot;</span>
+      <a href="index.html#cockpit">6 simulierte Webinterfaces</a>
+      <span class="sep">&middot;</span>
+      <span>DPP-Glossar (A–Z)</span>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <img class="site-logo" src="assets/img/dpp-logo.svg" alt="DPP Kurs" />
+      <span class="tag">Nachschlagewerk &middot; Rechts- &amp; Technikbegriffe</span>
+      <h1>DPP-Glossar (A–Z)</h1>
+      <p class="lede">Die wichtigsten Begriffe rund um den Digitalen Produktpass, die Batterieverordnung (EU)&nbsp;2023/1542, die Ökodesign-Verordnung ESPR (EU)&nbsp;2024/1781, die Normenreihe EN&nbsp;18219–18246 und unsere simulierten Systeme (Offline-Vorlage) — mit direktem Sprung zur passenden Kursstation.</p>
+    </div>
+  </header>
+
+  <div class="search-bar" role="search">
+    <div class="wrap">
+      <div class="search-inner">
+        <div class="search-field">
+          <input type="search" id="glossary-search" placeholder="Begriff suchen, z. B. Anhang XIII, did:oyd, dpplint, GS1, Stufe 4, Gate …" aria-label="Glossar durchsuchen" autocomplete="off" />
+        </div>
+        <p class="search-count" id="search-count"><b id="term-n">26</b> Begriffe</p>
+      </div>
+      <nav class="alpha-nav" id="alpha-nav" aria-label="Buchstabenwahl"></nav>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div id="glossary"></div>
+        <p class="no-results" id="no-results">Kein Begriff gefunden. Versuchen Sie einen kürzeren Suchbegriff.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><b>Direktlinks:</b> <a href="index.html#start">Kurs-Startseite</a> &middot; <a href="index.html#cockpit">Simulations-Cockpit</a> &middot; <a href="https://www.example.invalid/pflichtenfinder" target="_blank" rel="noopener">DPP-Pflichtenfinder</a> &middot; <a href="https://dpp.example.invalid/de" target="_blank" rel="noopener">Elektro DPP-Engine</a> &middot; <a href="https://dpplint.example.invalid" target="_blank" rel="noopener">dpplint.example.invalid</a></p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var TERMS = [
+      { name: "ai_extracted (KI-extrahierte Herkunft)", de: "Provenance-Status · Gate 2 Blocker", def: "Herkunftsmarkierung für Werte, die automatisiert per Sprachmodell oder OCR aus Dokumenten gelesen wurden. In der Elektro-Engine blockiert Gate 2 jede Veröffentlichung, solange ein Pflichtwert noch auf ai_extracted steht.", mod: "index.html#s5", mlabel: "Station 5" },
+      { name: "Anhang XIII (Annex XIII)", de: "Batterieverordnung (EU) 2023/1542", def: "Der zentrale Datenkatalog der EU-Batterieverordnung. Gliedert die Batteriepass-Felder in vier Zielgruppen-Abschnitte: (1) Öffentlich, (2) Berechtigtes Interesse & Behörden, (3) Nur Behörden/Notified Bodies, (4) Einzelstück-Dynamik.", mod: "index.html#s3", mlabel: "Station 3 & 4" },
+      { name: "Append-only-Versionierung", de: "EN 18221:2026 & prEN 18246", def: "Prinzip, bei dem veröffentlichte Produktpass-Versionen niemals überschrieben werden. Jede Aktualisierung erzeugt eine neue Version, die den SHA-256-Hash der Vorgängerversion (prev_hash) referenziert.", mod: "index.html#s7", mlabel: "Station 7" },
+      { name: "Archivierter Pass (archived)", de: "Art. 77 Abs. 7 BattVO · Second Life", def: "Wird eine Batterie für ein zweites Leben umgewidmet (Repurposing/Remanufacturing), wechselt der ursprüngliche Pass in den Status archived und verweist auf den neuen Nachfolgerpass.", mod: "index.html#s6", mlabel: "Station 2 & 6" },
+      { name: "Batterieverordnung (EU) 2023/1542", de: "Unmittelbar geltende EU-Verordnung", def: "Regelt in Art. 77–78 und Anhang XIII den verbindlichen Batteriepass ab dem 18.02.2027 für Elektrofahrzeugbatterien (EV), Industriebatterien > 2 kWh und LMT-/LV-Batterien.", mod: "index.html#s1", mlabel: "Station 1" },
+      { name: "CEN/CENELEC JTC 24", de: "Europäisches Normungskomitee für den DPP", def: "Das Joint Technical Committee 24 erarbeitet im Auftrag der EU-Kommission (Mandat M/595) die horizontale Normenreihe EN 18219 bis prEN 18246 für das europäische DPP-System.", mod: "index.html#s10", mlabel: "Station 10" },
+      { name: "did:oyd (Beispiel-DID-Methode)", de: "digitalProductPassportId · W3C DID", def: "Dezentrale, kryptografisch prüfbare Identität (z. B. did:oyd:zQmQP8AD...) für Pass-Instanzen und Aussteller. Wird im JSON-LD-Dokument geführt, aber niemals direkt in den QR-Code auf dem Produkt gedruckt.", mod: "index.html#s7", mlabel: "Station 7 & 8" },
+      { name: "dpplint (dpplint.example.invalid)", de: "Prüfwerkzeug · Leitprojekt PACE-DPP (FFG 917177)", def: "Unabhängiger Beispiel-Prüfdienst, der Produkt-Identifier und DPP-Endpunkte von außen gegen den offenen dpp-criteria-Katalog validiert.", mod: "index.html#s9", mlabel: "Station 9" },
+      { name: "DPP-Pflichtenfinder", de: "example.invalid/pflichtenfinder & Elektro-App", def: "Interaktiver Entscheidungsbaum, der anhand von Produktgruppe, Kapazitätsschwelle und Wirtschaftsakteur-Rolle ermittelt, welche DPP-Pflichten ab welchem Stichtag greifen.", mod: "index.html#s2", mlabel: "Station 2" },
+      { name: "Durchführungsverordnung (EU) 2026/1778", de: "EU-DPP-Register · In Kraft seit 06.08.2026", def: "Regelt den operativen Betrieb des zentralen EU-DPP-Registers (live seit 20.07.2026), einschließlich der 50-Zeichen-Obergrenze für registrierte Identifier.", mod: "index.html#s8", mlabel: "Station 1 & 8" },
+      { name: "EN 18219:2026 (Identifiers)", de: "CEN/CENELEC-Norm für eindeutige Kennungen", def: "Spezifiziert Aufbau, Auflösung und Granularität (Modell, Charge, Einzelstück) von Produkt-, Akteurs- und Standortkennungen wie GS1 Digital Link und IEC 61406.", mod: "index.html#s8", mlabel: "Station 8" },
+      { name: "EN 18222:2026 (REST-API)", de: "CEN/CENELEC-Norm für DPP-Schnittstellen", def: "Definiert die 5 standardisierten HTTP-REST-Endpunkte zum Abruf von Produktpässen, Einzelattributen, Versionshistorien, Linksets und historischen Stichtags-Ständen (dppsByIdAndDate).", mod: "index.html#s10", mlabel: "Station 10" },
+      { name: "EN 18223:2026 (Semantisches Datenmodell)", de: "JSON-LD & RDF-Interoperabilität", def: "Stellt über JSON-LD sicher, dass jedes Datenfeld samt Einheit und Kontext maschinenlesbar interpretiert werden kann (in unserem EV-Pass: 182 kompakte Aussagen / 1.024 expandierte Tripel).", mod: "index.html#s10", mlabel: "Station 10" },
+      { name: "ES256 (ECDSA P-256 / SHA-256)", de: "Kryptografisches Signaturverfahren", def: "Asymmetrischer Signaturalgorithmus, mit dem die Elektro-Engine jeden veröffentlichten Pass-Snapshot fälschungssicher unterzeichnet.", mod: "index.html#s7", mlabel: "Station 7" },
+      { name: "ESPR — Verordnung (EU) 2024/1781", de: "Ecodesign for Sustainable Products Regulation", def: "Die europäische Ökodesign-Rahmenverordnung (in Kraft seit 18.07.2024). Sie weitet den Digitalen Produktpass über delegierte Rechtsakte schrittweise auf Textilien, Möbel, Eisen/Stahl, Reifen und Elektronik aus.", mod: "index.html#s1", mlabel: "Station 1" },
+      { name: "Fail-Closed-Gates (Gate 1 & Gate 2)", de: "Freigabeschranken in der Elektro DPP-Engine", def: "Zwei automatische Prüf-Tore vor jeder Veröffentlichung: Gate 1 prüft die Vollständigkeit aller zum Stichtag fälligen Pflichtfelder ohne Platzhalter; Gate 2 blockiert unbestätigte KI-Werte (ai_extracted).", mod: "index.html#s5", mlabel: "Station 5" },
+      { name: "Finding-Typ C (INDETERMINATE)", de: "Ehrliche Grenze im Elektro-Compliance-Check", def: "Kennzeichnet Anforderungen, bei denen eine inhaltliche Dokumenten- oder Notified-Body-Prüfung durch einen Menschen nötig ist. Das System meldet bewusst INDETERMINATE statt eines falschen grünen Hakens.", mod: "index.html#s9", mlabel: "Station 9" },
+      { name: "GS1 Digital Link", de: "Web-URI-Standard für Produktkennungen", def: "Macht aus klassischen GS1-Identifikatoren (AI 01 GTIN, AI 10 Charge, AI 21 Seriennummer, AI 414/417 GLN) eine im Web auflösbare HTTP-URI auf der eigenen Domain des Herstellers.", mod: "index.html#s8", mlabel: "Station 8" },
+      { name: "LFP (Lithium-Eisenphosphat)", de: "Zellchemie · Bedingte Pflichtfelder", def: "Kobalt- und nickelfreie Batteriechemie (wie in unserem 250-kWh-Musterpass ATDEMOIS2500001), bei der die Sorgfaltspflichtfelder für Kobalt und Nickel regelkonform entfallen.", mod: "index.html#s3", mlabel: "Station 3 & 6" },
+      { name: "MCP-Server (Model Context Protocol)", de: "dpp.example.invalid/de/dpp/mcp · 13 Tools", def: "Schnittstelle nach JSON-RPC 2.0, über die KI-Assistenten beim Onboarding und Feld-Mapping auf den 211-Felder-Katalog und die Vorprüfung zugreifen können.", mod: "index.html#s11", mlabel: "Station 11" },
+      { name: "Offenlegungsstufen 1 bis 4", de: "Art. 77 Abs. 2 UAbs. 2 BattVO", def: "Mengenbasierte Zugriffssteuerung: Öffentlich = {1}, Marktüberwachung = {1,2,3}, Freie Werkstatt / Recycler = {1,2,4}, Hersteller intern = {1,2,3,4}.", mod: "index.html#s4", mlabel: "Station 4" },
+      { name: "Provenance (Datenherkunft pro Wert)", de: "verified · partner_provided · estimated · ai_extracted", def: "In der Elektro-Engine wird zu jedem einzelnen Feldwert gespeichert, woher er stammt und wer ihn bestätigt hat.", mod: "index.html#s5", mlabel: "Station 5" },
+      { name: "uniqueProductIdentifier (UPI)", de: "EN 18219 · Max. 50 Zeichen im EU-Register", def: "Die eindeutige Produktkennung, die im QR-Code auf das Produkt gedruckt und im EU-DPP-Register hinterlegt wird (z. B. https://dpp.example.invalid/01/09520123456788/21/000002).", mod: "index.html#s8", mlabel: "Station 8" }
+    ];
+
+    var ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    var glossaryEl = document.getElementById("glossary");
+    var searchEl = document.getElementById("glossary-search");
+    var countEl = document.getElementById("term-n");
+    var alphaNav = document.getElementById("alpha-nav");
+    var noResults = document.getElementById("no-results");
+
+    function sortKey(t) { return t.name.replace(/^[^A-Za-z]+/, "").toUpperCase(); }
+    TERMS.sort(function (a, b) { return sortKey(a) < sortKey(b) ? -1 : 1; });
+
+    var byLetter = {};
+    TERMS.forEach(function (t) {
+      var L = sortKey(t).charAt(0);
+      (byLetter[L] = byLetter[L] || []).push(t);
+    });
+
+    ALPHABET.forEach(function (L) {
+      var a = document.createElement("a");
+      a.textContent = L;
+      if (byLetter[L]) a.href = "#group-" + L;
+      else a.setAttribute("aria-disabled", "true");
+      alphaNav.appendChild(a);
+    });
+
+    Object.keys(byLetter).sort().forEach(function (L) {
+      var grp = document.createElement("div");
+      grp.className = "letter-group";
+      grp.id = "group-" + L;
+      grp.innerHTML = '<h2 class="letter-head">' + L + '</h2><div class="terms"></div>';
+      var grid = grp.querySelector(".terms");
+      byLetter[L].forEach(function (t) {
+        var card = document.createElement("article");
+        card.className = "term";
+        card.dataset.search = (t.name + " " + t.de + " " + t.def).toLowerCase();
+        card.innerHTML =
+          '<h3>' + t.name + '</h3>' +
+          '<div class="de">' + t.de + '</div>' +
+          '<p>' + t.def + '</p>' +
+          '<a class="mod" href="' + t.mod + '">Zur ' + t.mlabel + ' &rarr;</a>';
+        grid.appendChild(card);
+      });
+      glossaryEl.appendChild(grp);
+    });
+    countEl.textContent = TERMS.length;
+
+    searchEl.addEventListener("input", function () {
+      var q = searchEl.value.trim().toLowerCase();
+      var shown = 0;
+      document.querySelectorAll(".letter-group").forEach(function (grp) {
+        var gShown = 0;
+        grp.querySelectorAll(".term").forEach(function (card) {
+          var hit = !q || card.dataset.search.indexOf(q) !== -1;
+          card.classList.toggle("hide", !hit);
+          if (hit) { shown++; gShown++; }
+        });
+        grp.classList.toggle("hide", gShown === 0);
+      });
+      countEl.textContent = shown;
+      noResults.classList.toggle("show", shown === 0);
+    });
+  })();
+  </script>
+</body>
+</html>

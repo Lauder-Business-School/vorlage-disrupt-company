@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#112210"/>
+      <stop offset="52%" stop-color="#1d381a"/>
+      <stop offset="100%" stop-color="#2f562a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="85%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#90a955" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#90a955" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="12%" cy="88%" r="50%">
+      <stop offset="0%" stop-color="#4f772d" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#162b14" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#c5e4a0" fill-opacity="0.16"/>
+    </pattern>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8faf5"/>
+      <stop offset="100%" stop-color="#eef5e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow1)"/>
+  <rect width="1200" height="675" fill="url(#glow2)"/>
+  <rect width="1200" height="675" fill="url(#dots)"/>
+
+  <!-- Decorative circular rings in top right -->
+  <g transform="translate(1030, 140)" opacity="0.22" fill="none" stroke="#c5e4a0">
+    <circle r="190" stroke-width="1.5" stroke-dasharray="6 8"/>
+    <circle r="145" stroke-width="1.5"/>
+    <circle r="98" stroke-width="2" stroke-dasharray="3 6"/>
+    <circle r="48" stroke-width="1.5" fill="#90a955" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Browser / Cockpit Window Frame -->
+  <g transform="translate(56, 46)">
+    <rect width="1088" height="583" rx="22" fill="#162b14" fill-opacity="0.82" stroke="#90a955" stroke-opacity="0.45" stroke-width="1.5"/>
+    <!-- Top Browser Bar -->
+    <rect width="1088" height="54" rx="22" fill="#0f1f0e"/>
+    <rect y="30" width="1088" height="24" fill="#0f1f0e"/>
+    <line x1="0" y1="54" x2="1088" y2="54" stroke="#31572c" stroke-width="1"/>
+    <circle cx="28" cy="27" r="6.5" fill="#e06c75" opacity="0.85"/>
+    <circle cx="50" cy="27" r="6.5" fill="#e5c07b" opacity="0.85"/>
+    <circle cx="72" cy="27" r="6.5" fill="#6a994e" opacity="0.95"/>
+
+    <!-- URL Pill -->
+    <rect x="104" y="13" width="490" height="28" rx="14" fill="#1b3318" stroke="#4f772d" stroke-opacity="0.6"/>
+    <circle cx="122" cy="27" r="4.5" fill="#80b918"/>
+    <text x="136" y="32" font-family="monospace" font-size="13" font-weight="600" fill="#d9ed92">https://dpp.example.invalid/de/dpp/beispiele</text>
+
+    <!-- Status Badge -->
+    <rect x="860" y="13" width="204" height="28" rx="14" fill="#244220" stroke="#90a955" stroke-opacity="0.6"/>
+    <text x="962" y="31" text-anchor="middle" font-family="monospace" font-size="11.5" font-weight="700" fill="#c5e4a0" letter-spacing="0.8">4 PÄSSE · 200 OK</text>
+
+    <!-- Header Area inside Cockpit -->
+    <text x="40" y="96" font-family="monospace" font-size="12" font-weight="700" fill="#90a955" letter-spacing="2">✦ 4 ECHTE REFERENZPÄSSE · STATION 3 & 7</text>
+    <text x="40" y="134" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#f8faf5" letter-spacing="-0.6">Produktiv verankerte Beispielpässe live inspizieren</text>
+    <text x="40" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#c5e4a0" opacity="0.9">EcoVolt 3000 · VoltStore IS-250 · TrailPower EB-630 · VoltDrive B-80</text>
+
+    <!-- Main Content Body -->
+    <g transform="translate(40, 184)">
+      
+  <g transform="translate(0, 0)">
+    <rect width="492" height="170" rx="14" fill="url(#cardBg)" stroke="#90a955" stroke-width="1.5"/>
+    <rect x="20" y="18" width="138" height="24" rx="12" fill="#162b14"/>
+    <text x="89" y="34" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#c5e4a0">ATDEMODEMO0002</text>
+    <text x="20" y="68" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1a2117">EcoVolt 3000 · EV-Traktionsbatterie</text>
+    <text x="20" y="92" font-family="system-ui, sans-serif" font-size="13" fill="#44513e">75 kWh · NMC811 · 64,2 kg CO₂e/kWh · SOH 96,4 %</text>
+    <text x="20" y="142" font-family="monospace" font-size="11.5" font-weight="700" fill="#4f772d">✓ LIVE AUF DPP.SUSTAINISTA.NET/DE/DPP/BEISPIELE ↗</text>
+
+    <rect x="516" width="492" height="170" rx="14" fill="url(#cardBg)" stroke="#90a955" stroke-width="1.5"/>
+    <rect x="536" y="18" width="146" height="24" rx="12" fill="#162b14"/>
+    <text x="609" y="34" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#c5e4a0">ATDEMOIS2500001</text>
+    <text x="536" y="68" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1a2117">VoltStore IS-250 · Industriespeicher</text>
+    <text x="536" y="92" font-family="system-ui, sans-serif" font-size="13" fill="#44513e">250 kWh Stationär · LFP · BattVO Art. 77 (&gt; 2 kWh)</text>
+    <text x="536" y="142" font-family="monospace" font-size="11.5" font-weight="700" fill="#4f772d">✓ LIVE AUF DPP.SUSTAINISTA.NET/DE/DPP/BEISPIELE ↗</text>
+
+    <rect y="190" width="492" height="170" rx="14" fill="url(#cardBg)" stroke="#90a955" stroke-width="1.5"/>
+    <rect x="20" y="208" width="146" height="24" rx="12" fill="#162b14"/>
+    <text x="93" y="224" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#c5e4a0">ATDEMOEB6300001</text>
+    <text x="20" y="258" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1a2117">TrailPower EB-630 · LMT E-Bike-Akku</text>
+    <text x="20" y="282" font-family="system-ui, sans-serif" font-size="13" fill="#44513e">630 Wh Leichtverkehrsmittel · EN 45554 Reparatur-Score</text>
+    <text x="20" y="332" font-family="monospace" font-size="11.5" font-weight="700" fill="#4f772d">✓ LIVE AUF DPP.SUSTAINISTA.NET/DE/DPP/BEISPIELE ↗</text>
+
+    <rect x="516" y="190" width="492" height="170" rx="14" fill="url(#cardBg)" stroke="#90a955" stroke-width="1.5"/>
+    <rect x="536" y="208" width="138" height="24" rx="12" fill="#162b14"/>
+    <text x="605" y="224" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="700" fill="#c5e4a0">ATDEMOB800001</text>
+    <text x="536" y="258" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1a2117">VoltDrive B-80 · Hochvolt-Traktion</text>
+    <text x="536" y="282" font-family="system-ui, sans-serif" font-size="13" fill="#44513e">80 kWh · 800V Architektur · Volle Lieferketten-Due-Diligence</text>
+    <text x="536" y="332" font-family="monospace" font-size="11.5" font-weight="700" fill="#4f772d">✓ LIVE AUF DPP.SUSTAINISTA.NET/DE/DPP/BEISPIELE ↗</text>
+  </g>
+
+    </g>
+  </g>
+</svg>

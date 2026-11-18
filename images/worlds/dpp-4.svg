@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#112210"/>
+      <stop offset="52%" stop-color="#1d381a"/>
+      <stop offset="100%" stop-color="#2f562a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="85%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#90a955" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#90a955" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="12%" cy="88%" r="50%">
+      <stop offset="0%" stop-color="#4f772d" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#162b14" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#c5e4a0" fill-opacity="0.16"/>
+    </pattern>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8faf5"/>
+      <stop offset="100%" stop-color="#eef5e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow1)"/>
+  <rect width="1200" height="675" fill="url(#glow2)"/>
+  <rect width="1200" height="675" fill="url(#dots)"/>
+
+  <!-- Decorative circular rings in top right -->
+  <g transform="translate(1030, 140)" opacity="0.22" fill="none" stroke="#c5e4a0">
+    <circle r="190" stroke-width="1.5" stroke-dasharray="6 8"/>
+    <circle r="145" stroke-width="1.5"/>
+    <circle r="98" stroke-width="2" stroke-dasharray="3 6"/>
+    <circle r="48" stroke-width="1.5" fill="#90a955" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Browser / Cockpit Window Frame -->
+  <g transform="translate(56, 46)">
+    <rect width="1088" height="583" rx="22" fill="#162b14" fill-opacity="0.82" stroke="#90a955" stroke-opacity="0.45" stroke-width="1.5"/>
+    <!-- Top Browser Bar -->
+    <rect width="1088" height="54" rx="22" fill="#0f1f0e"/>
+    <rect y="30" width="1088" height="24" fill="#0f1f0e"/>
+    <line x1="0" y1="54" x2="1088" y2="54" stroke="#31572c" stroke-width="1"/>
+    <circle cx="28" cy="27" r="6.5" fill="#e06c75" opacity="0.85"/>
+    <circle cx="50" cy="27" r="6.5" fill="#e5c07b" opacity="0.85"/>
+    <circle cx="72" cy="27" r="6.5" fill="#6a994e" opacity="0.95"/>
+
+    <!-- URL Pill -->
+    <rect x="104" y="13" width="490" height="28" rx="14" fill="#1b3318" stroke="#4f772d" stroke-opacity="0.6"/>
+    <circle cx="122" cy="27" r="4.5" fill="#80b918"/>
+    <text x="136" y="32" font-family="monospace" font-size="13" font-weight="600" fill="#d9ed92">https://dpp.example.invalid/api/verify/ATDEMODEMO0002</text>
+
+    <!-- Status Badge -->
+    <rect x="860" y="13" width="204" height="28" rx="14" fill="#244220" stroke="#90a955" stroke-opacity="0.6"/>
+    <text x="962" y="31" text-anchor="middle" font-family="monospace" font-size="11.5" font-weight="700" fill="#c5e4a0" letter-spacing="0.8">VERIFIED · DID:OYD</text>
+
+    <!-- Header Area inside Cockpit -->
+    <text x="40" y="96" font-family="monospace" font-size="12" font-weight="700" fill="#90a955" letter-spacing="2">✦ KRYPTOGRAFISCHE NACHWEISKETTE · STATION 7</text>
+    <text x="40" y="134" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#f8faf5" letter-spacing="-0.6">Manipulationssicher mit SHA-256 & W3C did:oyd</text>
+    <text x="40" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#c5e4a0" opacity="0.9">4-stufige Vertrauenskette: Kanonisches JSON → Hash-Chain → Ed25519 Signatur → Universal Resolver</text>
+
+    <!-- Main Content Body -->
+    <g transform="translate(40, 184)">
+      
+  <rect width="1008" height="360" rx="16" fill="url(#cardBg)" stroke="#c6d4bc" stroke-width="1.5"/>
+  <text x="28" y="40" font-family="monospace" font-size="12" font-weight="700" fill="#4f772d">4-STUFIGE VERTRAUENSKETTE · LIVE VERIFY API (/API/VERIFY/ATDEMODEMO0002)</text>
+  <g transform="translate(28, 62)">
+    <rect width="224" height="210" rx="14" fill="#ffffff" stroke="#90a955" stroke-width="1.5"/>
+    <circle cx="36" cy="36" r="16" fill="#e1f2ce"/>
+    <text x="36" y="41" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#162b14">01</text>
+    <text x="20" y="78" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1a2117">Kanonisches JSON</text>
+    <text x="20" y="102" font-family="system-ui, sans-serif" font-size="12.5" fill="#44513e">Deterministische Serialisierung nach RFC 8785 (JCS).</text>
+    <rect x="20" y="148" width="184" height="42" rx="8" fill="#f1f5ec"/>
+    <text x="30" y="166" font-family="monospace" font-size="10" fill="#31572c">SHA-256 Digest:</text>
+    <text x="30" y="181" font-family="monospace" font-size="10.5" font-weight="700" fill="#1a2117">9f86d081...b0f00a08</text>
+
+    <rect x="242" width="224" height="210" rx="14" fill="#ffffff" stroke="#90a955" stroke-width="1.5"/>
+    <circle cx="278" cy="36" r="16" fill="#e1f2ce"/>
+    <text x="278" y="41" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#162b14">02</text>
+    <text x="262" y="78" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1a2117">Hash-Chain Link</text>
+    <text x="262" y="102" font-family="system-ui, sans-serif" font-size="12.5" fill="#44513e">Jedes Event (Fertigung → SOH → Second Life) verkettet prev_hash.</text>
+    <rect x="262" y="148" width="184" height="42" rx="8" fill="#f1f5ec"/>
+    <text x="272" y="166" font-family="monospace" font-size="10" fill="#31572c">Block #03 Integrität:</text>
+    <text x="272" y="181" font-family="monospace" font-size="10.5" font-weight="700" fill="#2d6a4f">✓ UNVERÄNDERT</text>
+
+    <rect x="484" width="224" height="210" rx="14" fill="#ffffff" stroke="#90a955" stroke-width="1.5"/>
+    <circle cx="520" cy="36" r="16" fill="#e1f2ce"/>
+    <text x="520" y="41" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#162b14">03</text>
+    <text x="504" y="78" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1a2117">Ed25519 / ES256</text>
+    <text x="504" y="102" font-family="system-ui, sans-serif" font-size="12.5" fill="#44513e">Kryptografische Signatur des Herstellers über den Pass-Zustand.</text>
+    <rect x="504" y="148" width="184" height="42" rx="8" fill="#f1f5ec"/>
+    <text x="514" y="166" font-family="monospace" font-size="10" fill="#31572c">Signatur-Prüfung:</text>
+    <text x="514" y="181" font-family="monospace" font-size="10.5" font-weight="700" fill="#2d6a4f">✓ VALID SIGNATURE</text>
+
+    <rect x="726" width="226" height="210" rx="14" fill="#162b14" stroke="#4f772d" stroke-width="1.5"/>
+    <circle cx="762" cy="36" r="16" fill="#4f772d"/>
+    <text x="762" y="41" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#ffffff">04</text>
+    <text x="746" y="78" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">W3C DID:OYD</text>
+    <text x="746" y="102" font-family="system-ui, sans-serif" font-size="12.5" fill="#e1f2ce">Dezentral auflösbar über oydid.example.invalid ohne Lock-in.</text>
+    <rect x="746" y="148" width="186" height="42" rx="8" fill="#244220"/>
+    <text x="756" y="166" font-family="monospace" font-size="10" fill="#c5e4a0">DID Status:</text>
+    <text x="756" y="181" font-family="monospace" font-size="10.5" font-weight="700" fill="#ffffff">did:oyd:z6Mkr9f8...</text>
+  </g>
+  <rect x="28" y="294" width="952" height="44" rx="10" fill="#e1f2ce"/>
+  <text x="504" y="321" text-anchor="middle" font-family="monospace" font-size="12" font-weight="700" fill="#162b14">✓ MANIPULATIONSSCHUTZ AKTIV: Jede nachträgliche Änderung eines Messwerts bricht sofort den SHA-256-Kettenhash.</text>
+
+    </g>
+  </g>
+</svg>

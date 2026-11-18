@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b0d"/>
+      <stop offset="50%" stop-color="#162b14"/>
+      <stop offset="100%" stop-color="#244220"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="80%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#90a955" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#90a955" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="20%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#4f772d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0d1b0d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#c5e4a0" fill-opacity="0.18"/>
+    </pattern>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#183016"/>
+      <stop offset="100%" stop-color="#0f1f0e"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow1)"/>
+  <rect width="1200" height="675" fill="url(#glow2)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+
+  <!-- Decision Flow Topology Lines in Background -->
+  <g opacity="0.25" stroke="#90a955" stroke-width="2" fill="none">
+    <path d="M 120 180 C 260 180, 280 260, 420 260" stroke-dasharray="6 6"/>
+    <path d="M 420 260 C 560 260, 580 180, 720 180"/>
+    <path d="M 420 260 C 560 260, 580 340, 720 340"/>
+    <path d="M 720 180 C 860 180, 890 260, 1040 260"/>
+    <path d="M 720 340 C 860 340, 890 260, 1040 260" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Cockpit HUD Frame -->
+  <g transform="translate(56, 42)" filter="url(#shadow)">
+    <rect width="1088" height="591" rx="20" fill="#112210" fill-opacity="0.9" stroke="#90a955" stroke-opacity="0.5" stroke-width="1.5"/>
+    
+    <!-- Top HUD Header Bar -->
+    <rect width="1088" height="52" rx="20" fill="#0b170a"/>
+    <rect y="30" width="1088" height="22" fill="#0b170a"/>
+    <line x1="0" y1="52" x2="1088" y2="52" stroke="#244220" stroke-width="1.5"/>
+    
+    <circle cx="28" cy="26" r="6" fill="#e06c75" opacity="0.85"/>
+    <circle cx="48" cy="26" r="6" fill="#e5c07b" opacity="0.85"/>
+    <circle cx="68" cy="26" r="6" fill="#6a994e" opacity="0.95"/>
+
+    <rect x="96" y="12" width="460" height="28" rx="14" fill="#162b14" stroke="#4f772d" stroke-opacity="0.7"/>
+    <circle cx="114" cy="26" r="4.5" fill="#80b918"/>
+    <text x="128" y="31" font-family="monospace" font-size="12" font-weight="600" fill="#d9ed92">example.invalid/dpp · SIMULATION STUDIO</text>
+
+    <!-- Radar Pill -->
+    <rect x="850" y="12" width="214" height="28" rx="14" fill="#244220" stroke="#90a955" stroke-opacity="0.7"/>
+    <circle cx="868" cy="26" r="4.5" fill="#52b788"/>
+    <text x="882" y="30" font-family="monospace" font-size="11" font-weight="700" fill="#c5e4a0" letter-spacing="0.8">LIVE SIMULATION HUD</text>
+
+    <!-- Headline and Subtitle inside Cockpit -->
+    <g transform="translate(36, 76)">
+      <text x="0" y="18" font-family="monospace" font-size="11" font-weight="700" fill="#90a955" letter-spacing="2">✦ DPP SIMULATION LAB · ENTSCHEIDUNGS-KNOTEN 05/12</text>
+      <text x="0" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="27" font-weight="700" fill="#f8faf5" letter-spacing="-0.5">Szenario: Marktüberwachungs-Audit &amp; Fail-Closed Gatekeeper</text>
+      <text x="0" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#c5e4a0" opacity="0.95">Stichtag BattVO 18.02.2027: Zulieferer-Konflikt, 4 Zugriffsstufen und kryptografische W3C-Siegelung.</text>
+    </g>
+
+    <!-- 3 Simulation Columns / Decision Cards -->
+    <g transform="translate(36, 175)">
+      
+      <!-- Card 1: Reales Dilemma & Faktenlage -->
+      <g transform="translate(0, 0)">
+        <rect width="320" height="380" rx="14" fill="url(#cardGrad)" stroke="#31572c" stroke-width="1.5"/>
+        <rect x="18" y="18" width="115" height="24" rx="12" fill="#244220" stroke="#4f772d"/>
+        <text x="75" y="34" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#c5e4a0">DILEMMA 05</text>
+        
+        <text x="18" y="70" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#ffffff">EV-3000 Markteintritt</text>
+        <text x="18" y="94" font-family="system-ui, sans-serif" font-size="12.5" fill="#c6d4bc" width="280">
+          <tspan x="18" dy="0">Eine KI hat den CO₂-Fußabdruck</tspan>
+          <tspan x="18" dy="18">aus dem chinesischen Zell-PDF</tspan>
+          <tspan x="18" dy="18">extrahiert (64,2 kg CO₂e/kWh).</tspan>
+          <tspan x="18" dy="22" font-weight="600" fill="#e5c07b">Die manuelle Freigabe fehlt.</tspan>
+        </text>
+
+        <!-- KPI Mini Board -->
+        <g transform="translate(18, 175)">
+          <rect width="284" height="66" rx="10" fill="#112210" stroke="#244220"/>
+          <text x="14" y="24" font-family="monospace" font-size="9.5" font-weight="700" fill="#90a955">STUFE 4 · BEHÖRDE (MARKTAUFSICHT)</text>
+          <text x="14" y="48" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#e06c75">Audit-Risiko: HOCH (Fail-Closed)</text>
+        </g>
+
+        <!-- Timeline Marker -->
+        <g transform="translate(18, 255)">
+          <rect width="284" height="95" rx="10" fill="#162b14" stroke="#4f772d"/>
+          <text x="14" y="24" font-family="monospace" font-size="9.5" font-weight="700" fill="#c5e4a0">RELEVANTE REGULIERUNG</text>
+          <text x="14" y="44" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">EU 2023/1542 Art. 77 &amp; Anhang XIII</text>
+          <text x="14" y="64" font-family="system-ui, sans-serif" font-size="11" fill="#c6d4bc">211 Datenfelder · DIN EN 18219 Norm</text>
+          <text x="14" y="82" font-family="monospace" font-size="10" fill="#90a955">Prüfwerkzeug: dpplint </text>
+        </g>
+      </g>
+
+      <!-- Card 2: Interaktive Entscheidungspfade -->
+      <g transform="translate(340, 0)">
+        <rect width="336" height="380" rx="14" fill="url(#cardGrad)" stroke="#4f772d" stroke-width="1.5"/>
+        <rect x="18" y="18" width="165" height="24" rx="12" fill="#31572c" stroke="#90a955"/>
+        <text x="100" y="34" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#e1f2ce">3 ENTSCHEIDUNGSPFADE</text>
+        <text x="18" y="70" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Wähle die Strategie</text>
+
+        <!-- Option A -->
+        <g transform="translate(18, 88)">
+          <rect width="300" height="78" rx="10" fill="#1f1816" stroke="#e06c75" stroke-width="1.2"/>
+          <text x="14" y="22" font-family="monospace" font-size="10" font-weight="700" fill="#e06c75">[PFAD A] Schnellstart (Ungeprüft)</text>
+          <text x="14" y="42" font-family="system-ui, sans-serif" font-size="11.5" fill="#f8faf5">Ungeprüfte KI-Zahl sofort publizieren.</text>
+          <text x="14" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e06c75">➜ Zollstopp &amp; Vertriebsverbot droht</text>
+        </g>
+
+        <!-- Option B (Recommended) -->
+        <g transform="translate(18, 176)">
+          <rect width="300" height="92" rx="10" fill="#162b14" stroke="#52b788" stroke-width="1.8"/>
+          <rect x="210" y="10" width="80" height="18" rx="9" fill="#2d6a4f"/>
+          <text x="250" y="23" text-anchor="middle" font-family="monospace" font-size="9" font-weight="700" fill="#d9ed92">EMPFOHLEN</text>
+          <text x="14" y="22" font-family="monospace" font-size="10" font-weight="700" fill="#74c69d">[PFAD B] Fail-Closed Gatekeeper</text>
+          <text x="14" y="42" font-family="system-ui, sans-serif" font-size="11.5" fill="#f8faf5">Gate blockiert Pass. Erst Compliance-</text>
+          <text x="14" y="58" font-family="system-ui, sans-serif" font-size="11.5" fill="#f8faf5">Freigabe, dann Ed25519-Signatur.</text>
+          <text x="14" y="78" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#74c69d">➜ 100 % Audit-sicher &amp; DSGVO-konform</text>
+        </g>
+
+        <!-- Option C -->
+        <g transform="translate(18, 278)">
+          <rect width="300" height="82" rx="10" fill="#182717" stroke="#90a955" stroke-width="1.2"/>
+          <text x="14" y="22" font-family="monospace" font-size="10" font-weight="700" fill="#c5e4a0">[PFAD C] Quarantäne &amp; API-Fallback</text>
+          <text x="14" y="42" font-family="system-ui, sans-serif" font-size="11.5" fill="#f8faf5">Pass auf Stufe 1 (Öffentlich) beschränken,</text>
+          <text x="14" y="58" font-family="system-ui, sans-serif" font-size="11.5" fill="#f8faf5">Katalogsperre für Behörden aktiv halten.</text>
+          <text x="14" y="74" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#c5e4a0">➜ Teilschutz mit Fristsetzung</text>
+        </g>
+      </g>
+
+      <!-- Card 3: Live-Audit & Verifikations-Ergebnis -->
+      <g transform="translate(696, 0)">
+        <rect width="320" height="380" rx="14" fill="#0f1e0e" stroke="#31572c" stroke-width="1.5"/>
+        <rect x="18" y="18" width="135" height="24" rx="12" fill="#1c3619" stroke="#52b788"/>
+        <text x="85" y="34" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#c5e4a0">AUDIT COCKPIT</text>
+        
+        <text x="18" y="70" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Simulations-Ergebnis</text>
+
+        <!-- Radar Ring / Compliance Score -->
+        <g transform="translate(18, 88)">
+          <rect width="284" height="110" rx="10" fill="#162b14" stroke="#4f772d"/>
+          
+          <!-- Circle Meter -->
+          <circle cx="56" cy="55" r="38" fill="none" stroke="#244220" stroke-width="7"/>
+          <circle cx="56" cy="55" r="38" fill="none" stroke="#74c69d" stroke-width="7" stroke-dasharray="238" stroke-dashoffset="24" transform="rotate(-90 56 55)"/>
+          <text x="56" y="60" text-anchor="middle" font-family="monospace" font-size="15" font-weight="800" fill="#ffffff">98%</text>
+          
+          <text x="110" y="38" font-family="monospace" font-size="10" font-weight="700" fill="#90a955">AUDIT SCORE: OPTIMAL</text>
+          <text x="110" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e1f2ce">Pass verifiziert</text>
+          <text x="110" y="76" font-family="system-ui, sans-serif" font-size="11" fill="#c6d4bc">211 Felder validiert</text>
+          <text x="110" y="94" font-family="monospace" font-size="10" fill="#74c69d">SHACL &amp; JSON-LD OK</text>
+        </g>
+
+        <!-- Live Cryptographic Proof Details -->
+        <g transform="translate(18, 208)">
+          <rect width="284" height="145" rx="10" fill="#112210" stroke="#244220"/>
+          <text x="14" y="24" font-family="monospace" font-size="9.5" font-weight="700" fill="#90a955">KRYPTOGRAFISCHE AUDIT-KETTE</text>
+          
+          <text x="14" y="46" font-family="monospace" font-size="9" fill="#c6d4bc">DID IDENTIFIER:</text>
+          <text x="14" y="60" font-family="monospace" font-size="9.5" font-weight="600" fill="#c5e4a0">did:oyd:z6Mkr9f86d081884c7d65...</text>
+
+          <text x="14" y="82" font-family="monospace" font-size="9" fill="#c6d4bc">SHA-256 STATE HASH:</text>
+          <text x="14" y="96" font-family="monospace" font-size="9.5" font-weight="600" fill="#c5e4a0">9f86d081884c7d659a2feaa0c5...</text>
+
+          <rect x="14" y="110" width="256" height="24" rx="6" fill="#244220" stroke="#4f772d"/>
+          <text x="142" y="126" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#d9ed92">✓ UNVERÄNDERBAR VERSIEGELT</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>

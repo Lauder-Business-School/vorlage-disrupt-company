@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IT- &amp; Datenschutz-Factsheet | DISRUPT</title>
+<meta name="description" content="Auf einer Seite: was eure IT und euer Datenschutz für die Freigabe der DISRUPT-Lernwelten wissen müssen. Domains, Anforderungen, Daten, Hosting, Auftragsverarbeitung.">
+<link rel="canonical" href="https://example.invalid/it-factsheet.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<div class="toolbar"><a href="https://example.invalid/#">← Zurück zu example.invalid</a><button type="button" onclick="window.print()">Als PDF drucken</button></div>
+<main>
+  <a class="brand" href="https://example.invalid/#" title="Zurück zu example.invalid" style="text-decoration:none;color:inherit;display:inline-block;">disrupt<span>✳</span></a>
+  <h1>IT- &amp; Datenschutz-Factsheet</h1>
+  <p class="lead">Alles für die Freigabe auf einer Seite. Für Rückfragen eurer IT oder eures Datenschutzes: <a href="mailto:kontakt@example.invalid">kontakt@example.invalid</a> oder <a href="index.html#kontakt" rel="noopener noreferrer">Termin buchen</a>.</p>
+
+  <div class="grid">
+    <section class="box">
+      <h3>Technik</h3>
+      <ul>
+        <li>Reine Webanwendungen, keine Installation, keine Plug-ins</li>
+        <li>Aktuelle Versionen von Chrome, Edge, Firefox oder Safari</li>
+        <li>Laptop empfohlen; Tablet möglich</li>
+        <li>Stabile Internetverbindung; Live-Aktualisierung über WebSocket (<code>wss://</code>)</li>
+        <li>Tipp: Anmeldung und Kursbeitritt vorab einmal im Zielnetz testen</li>
+      </ul>
+    </section>
+    <section class="box">
+      <h3>Domains für die Freigabe</h3>
+      <ul>
+        <li><code>*.example.invalid</code> (Portal und alle Lernwelten)</li>
+        <li><code>*.supabase.co</code> (Anmeldung und Datenbank, HTTPS und WSS)</li>
+        <li>Nur Human × AI: <code>cdn.jsdelivr.net</code> (Folien), optional <code>www.youtube-nocookie.com</code> (Videos)</li>
+        <li>Nur DPP Simulation Lab: <code>*.example.invalid</code> (Live-DPP-Systeme &amp; API-Schnittstellen)</li>
+      </ul>
+    </section>
+    <section class="box">
+      <h3>Welche Daten?</h3>
+      <ul>
+        <li>E-Mail, Anzeigename (Kürzel genügt), Passwort-Hash</li>
+        <li>Kurs- und Teamzugehörigkeit, Spielrolle</li>
+        <li>Entscheidungen, Begründungen, Kennzahlenverläufe</li>
+        <li>Keine besonderen Kategorien nach Art. 9 DSGVO, keine Matrikelnummern</li>
+        <li>Demorunden: keine personenbezogenen Daten, nichts wird gespeichert</li>
+      </ul>
+    </section>
+    <section class="box">
+      <h3>Hosting &amp; Dienstleister</h3>
+      <ul>
+        <li>Datenbank: Supabase, Rechenzentrum Frankfurt (EU)</li>
+        <li>Hosting: Vercel (EU-US Data Privacy Framework, SCC)</li>
+        <li>Keine Analyse-, Tracking- oder Werbe-Cookies</li>
+        <li>Keine Weitergabe an Dritte, keine KI-Verarbeitung der Kursdaten</li>
+        <li>Schriften lokal ausgeliefert</li>
+      </ul>
+    </section>
+    <section class="box">
+      <h3>Sicherheit</h3>
+      <ul>
+        <li>TLS-Verschlüsselung mit HSTS</li>
+        <li>Row-Level-Security: Teilnehmende sehen nur ihren Kurs und ihr Team</li>
+        <li>Getrennte Zugänge für Lehrende und Teilnehmende</li>
+        <li>Spielentscheidungen werden serverseitig geprüft</li>
+      </ul>
+    </section>
+    <section class="box">
+      <h3>Rollen &amp; Verträge</h3>
+      <ul>
+        <li>Eure Einrichtung: Verantwortliche für die Kursdaten</li>
+        <li>Dr. Stefan Bauer: Auftragsverarbeiter (Art. 28 DSGVO)</li>
+        <li>Auftragsverarbeitungsvertrag auf Anfrage</li>
+        <li>Löschung spätestens 12 Monate nach Kursende oder früher auf Wunsch</li>
+      </ul>
+    </section>
+  </div>
+
+  <h2>Lernwelten im Überblick</h2>
+  <table>
+    <thead><tr><th>Lernwelt</th><th>Adresse</th><th>Umfang</th><th>Sprache</th></tr></thead>
+    <tbody>
+      <tr><td>Reinvent</td><td><code>reinvent.example.invalid</code></td><td>7 Spielrunden + Abschluss-Debrief, 2–6 Rollen</td><td>DE</td></tr>
+      <tr><td>Venture Run</td><td><code>venture-run.example.invalid</code></td><td>8 Runden, 4 Rollen (ab 2 Personen)</td><td>EN</td></tr>
+      <tr><td>Under Attack</td><td><code>under-attack.example.invalid</code></td><td>15 Jahresrunden, 2–6 Rollen</td><td>EN</td></tr>
+      <tr><td>Service Matters</td><td><code>service-matters.example.invalid</code></td><td>8 Runden, 2–6 Rollen</td><td>DE</td></tr>
+      <tr><td>Human × AI</td><td><code>human-ai.example.invalid</code></td><td>16 Stationen, ca. 6 Std., Kurspasswort</td><td>DE</td></tr>
+      <tr><td>DPP Simulation Lab</td><td><code>example.invalid/dpp</code></td><td>12 Stationen, 6 simulierte Webinterfaces (Offline-Vorlage), ca. 4 Std.</td><td>DE</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">Anbieter: Dr. Stefan Bauer, Einzelunternehmen, Hauptstraße 97, 2171 Herrnbaumgarten, Österreich · Stand: November 2026 · Ausführlich: <a href="datenschutz.html">Datenschutzerklärung</a></p>
+</main>
+<footer class="legal-foot"><span>© 2026 Dr. Stefan Bauer</span><a href="https://example.invalid/#">Startseite (example.invalid)</a><a href="https://www.linkedin.com/in/stefan-bauer-innovator/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></footer>
+</body>
+</html>
